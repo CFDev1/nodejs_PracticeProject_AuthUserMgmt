@@ -27,8 +27,8 @@ router.post("/",function (req,res){
     if (req.body.email){
         friends[req.body.email] = {
             "firstName":req.body.firstName,
-            //Add similarly for lastName
-            //Add similarly for DOB
+            "lastName":req.body.lastName,
+            "DOB":req.body.DOB,
             }
     }
 res.send("The user" + (' ')+ (req.body.firstName) + " Has been added!");
