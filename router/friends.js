@@ -10,8 +10,6 @@ let friends = {
 
 
 // GET request: Retrieve all friends
-router.get("/",(req,res)=>{
-
  router.get("/",(req,res)=>{
     res.send(JSON.stringify(friends,null,4));
 
